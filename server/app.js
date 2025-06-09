@@ -1,3 +1,5 @@
+require('dotenv').config();  // Load environment variables from .env
+
 const express = require("express");
 const bcrypt = require('bcryptjs');
 const fileUpload = require("express-fileupload");
@@ -12,6 +14,9 @@ const slugRouter = require("./routes/slugs");
 const orderProductRouter = require('./routes/customer_order_product');
 const wishlistRouter = require('./routes/wishlist');
 var cors = require("cors");
+
+// Confirm environment variable is loaded (optional, remove in production)
+console.log("DATABASE_URL:", process.env.DATABASE_URL);
 
 const app = express();
 
@@ -35,7 +40,6 @@ app.use("/api/orders", orderRouter);
 app.use('/api/order-product', orderProductRouter);
 app.use("/api/slugs", slugRouter);
 app.use("/api/wishlist", wishlistRouter);
-
 
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {

@@ -20,10 +20,7 @@ const Hero = () => {
             THE PRODUCT OF THE FUTURE
           </h1>
           <p className="text-white max-sm:text-sm">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor modi
-            iure laudantium necessitatibus ab, voluptates vitae ullam. Officia
-            ipsam iusto beatae nesciunt, consequatur deserunt minima maiores
-            earum obcaecati. Optio, nam!
+            
           </p>
           <div className="flex gap-x-1 max-lg:flex-col max-lg:gap-y-1">
             <button className="bg-white text-blue-600 font-bold px-12 py-3 max-lg:text-xl max-sm:text-lg hover:bg-gray-100">
@@ -34,6 +31,8 @@ const Hero = () => {
             </button>
           </div>
         </div>
+
+
         <Image
           src="/watch for banner.png"
           width={400}
@@ -41,6 +40,9 @@ const Hero = () => {
           alt="smart watch"
           className="max-md:w-[300px] max-md:h-[300px] max-sm:h-[250px] max-sm:w-[250px] w-auto h-auto"
         />
+
+
+        
       </div>
     </div>
   );

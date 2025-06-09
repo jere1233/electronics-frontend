@@ -1,7 +1,7 @@
 // *********************
 // Role of the component: Topbar of the header
 // Name of the component: HeaderTop.tsx
-// Developer: Aleksandar Kuzmanovic
+// Developer: Jeremiah karanja
 // Version: 1.0
 // Component call: <HeaderTop />
 // Input parameters: no input parameters
@@ -31,11 +31,11 @@ const HeaderTop = () => {
         <ul className="flex items-center h-full gap-x-5 max-[370px]:text-sm max-[370px]:gap-x-2">
           <li className="flex items-center gap-x-2 font-semibold">
             <FaHeadphones className="text-white" />
-            <span>+381 61 123 321</span>
+            <span>+254 743 817 638</span>
           </li>
           <li className="flex items-center gap-x-2 font-semibold">
             <FaRegEnvelope className="text-white text-xl" />
-            <span>test@email.com</span>
+            <span>jeremiahkaranja584@gmail.com</span>
           </li>
         </ul>
         <ul className="flex items-center gap-x-5 h-full max-[370px]:text-sm max-[370px]:gap-x-2 font-semibold">
